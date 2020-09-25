@@ -1,0 +1,141 @@
+.form-card {
+    margin: 30px 0px;
+    &__inner {
+        background: linear-gradient(112.17deg, #EAFAFF 0%, #E2F8FF 100%);
+        box-shadow: 0px 8px 30px rgba(28, 54, 62, 0.2);
+        border-radius: 20px;
+        padding: 20px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    &__number {
+        color: $accent;
+        padding: 4px 8px;
+        border: 1px solid $accent;
+        margin-right: 10px;
+    }
+    &__actions {
+        display: flex;
+        @media (max-width: $sm) {
+            flex-wrap: wrap;
+        }
+    }
+    &__edit {
+        margin-right: 30px;
+        @media (max-width: $md) {
+            margin-right: 0;
+            width: 200px;
+        }
+        span {
+            margin-right: 10px;
+        }
+        svg {
+            fill: $white;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    &__delete {
+        margin-right: 30px;
+        @media (max-width: $md) {
+            margin-top: 20px;
+            margin-right: 0;
+            width: 200px;
+        }
+        span {
+            margin-right: 10px
+        }
+        svg {
+            fill: $white;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    &__appoint {
+        @media (max-width: $md) {
+            margin-top: 20px;
+            width: 200px;
+        }
+        span {
+            margin-right: 10px
+        }
+        svg {
+            fill: $white;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+.form-card__choice-people {
+    padding-top: 50px;
+}
+
+.choice-people {
+    &__filters-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secondary;
+        border-radius: 15px;
+    }
+    &__filters-main {
+        padding: 30px 0 0px;
+    }
+    &__filters-people {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secondary;
+        border-radius: 15px;
+        margin-top: 40px;
+    }
+}
+
+.filters-header {
+    &__title {
+        font-size: $font-size-base;
+        font-weight: $font-wight-medium;
+        color: $gray;
+        line-height: 21px;
+        padding: 20px 0px 20px 30px;
+    }
+    &__close {
+        font-size: $font-size-base;
+        font-weight: $font-wight-regular;
+        color: $gray;
+        line-height: 21px;
+        padding: 20px 30px 20px 0px;
+    }
+}
+
+.filters-main {
+    &__group {
+        font-size: 14px;
+        font-weight: $font-wight-medium;
+        color: $accent;
+        line-height: 16px;
+    }
+    &__allstudents {
+        font-size: 14px;
+        font-weight: $font-wight-medium;
+        color: $accent;
+        line-height: 16px;
+        padding-top: 30px;
+    }
+    &__students {
+        display: flex;
+        @media (max-width: $sm) {
+            flex-wrap: wrap;
+        }
+        input+input {
+            margin-left: 20px;
+            @media (max-width: $sm) {
+                margin-left: 0;
+            }
+        }
+    }
+}
